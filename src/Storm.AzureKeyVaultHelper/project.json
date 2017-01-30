@@ -1,0 +1,29 @@
+﻿{
+  "version": "0.1.0-*",
+  "authors": [ "Phil Oyston" ],
+  "packOptions": {
+    "owners": [ "Phil Oyston" ],
+    "summary": "Provides a helper over the Azure Key Vault client library, further simplifying the retrieval of keys and secrets."    
+  },
+  "dependencies": {
+    "Microsoft.Azure.KeyVault": "2.0.6",
+    "Microsoft.IdentityModel.Clients.ActiveDirectory": "3.13.8",
+    "NETStandard.Library": "1.5"
+  },
+
+  "frameworks": {
+    "netstandard1.5": {
+      "imports": "dnxcore50"
+    },
+    "net452": {
+      "buildOptions": {
+        "define": [
+          "NET452"
+        ]
+      },
+      "frameworkAssemblies": {
+        "System.Configuration": ""
+      }
+    }
+  }
+}
